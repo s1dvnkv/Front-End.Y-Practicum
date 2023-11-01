@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+body {
+  margin: 0;
+  background: #f1f1f1;
+}
+h2 {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #121723;
+}
+h3 {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #121723;
+}
+p {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 20px;
+  color: #121723;
+}
+.links {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header */
+.header {
+  background: #fff;
+  margin-bottom: 25px;
+  padding: 30px 0 16px 0;
+  border-bottom: solid #a1a6b4 1px;
+}
+.header__container {
+  max-width: 1161px;
+  margin: auto;
+}
+.header__logo {
+  width: 212.34px;
+  height: 63.24px;
+}
+.nav__links {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav__item {
+  text-decoration: none;
+  color: #121723;
+}
+
+/* main */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 25px;
+  max-width: 1161px;
+  margin: auto;
+}
+.content__title {
+  padding: 0;
+  margin: 0;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+.sneaker {
+  border-radius: 12px;
+  background: #fff;
+  width: 371px;
+  display: flex;
+  flex-direction: column;
+}
+.sneaker__image {
+  width: 370px;
+}
+.sneaker__overview {
+  margin: 32px 24px;
+}
+.sneaker__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.sneaker__text {
+  margin: 0;
+  padding: 0;
+}
+
+/* footer */
+.footer {
+  background: #121723;
+  padding: 32px 0 21px 0;
+}
+.footer__full {
+  max-width: 1161px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer__container {
+  margin-bottom: 32px;
+}
+.footer__logo {
+  color: #fff;
+  width: 299.653px;
+  height: 22.32px;
+}
+.footer__links {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__item {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__hr {
+  border: none;
+  height: 1px;
+  margin: 0;
+  background-color: #e6e8ec66;
+  color: #e6e8ec66;
+  margin-bottom: 18px;
+}
+.trademark {
+  width: 184px;
+  height: 16px;
+  margin: auto;
+}
