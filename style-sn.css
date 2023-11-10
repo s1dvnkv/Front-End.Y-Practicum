@@ -14,7 +14,6 @@
   font-style: normal;
   display: swap;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -26,9 +25,14 @@ h2,
 h3,
 p,
 ul,
-li {
+li,
+hr {
   margin: 0;
-  color: #121723;
+}
+hr {
+  height: 1px;
+  border: none;
+  background: black;
 }
 ul {
   list-style: none;
@@ -49,6 +53,7 @@ main {
   flex-direction: column;
   align-items: center;
   background: #f1f1f1;
+  margin: 0 auto;
 }
 
 /* стили для хедера(шапки) сайта */
@@ -61,14 +66,13 @@ header {
   border-bottom: 1px solid #a1a6b4;
   background: white;
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1140px;
   margin: 24px 0 24px;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 
 .logo-link {
@@ -98,61 +102,76 @@ nav {
 }
 
 /* стили для контента */
+.content h1,
+h2,
+h3,
+p {
+  color: #121723;
+}
 .content {
   margin: 32px 0;
   max-width: 1140px;
-}
-
-h1 {
-  font-size: 48px;
-  margin-bottom: 32px;
-}
-
-/* стили для контейнера кроссовок */
-.sneakers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-/* стили для карточки кроссовок */
-.sneaker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 364px;
-  height: 100%;
-  border-radius: 12px;
+  padding: 48px;
   background: white;
-}
-.sneakers a:hover {
-  transition: 1s;
-  transform: translateY(-10px);
-  box-shadow: 5px 20px 20px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
 }
 
 .sneaker-image {
   width: 100%;
-  border-radius: 50px;
+  margin-bottom: 32px;
 }
 
 .sneaker-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  width: 100%;
-  padding: 32px 24px;
+  gap: 24px;
 }
 
+h1,
+h2,
+p,
 h3 {
-  font-size: 26px;
+  font-weight: 400;
 }
-
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 p {
   font-size: 20px;
 }
+.text-history p {
+  margin-bottom: 32px;
+  line-height: 28px;
+}
 
+.sneaker-text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 32px;
+}
+
+.text-history {
+  width: 50%;
+}
+.text-info {
+  width: 50%;
+  gap: 24px;
+}
+.sneaker-li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+/* стили для футера */
 footer {
   width: 100%;
   display: flex;
@@ -161,7 +180,6 @@ footer {
   background: #121723;
 }
 
-/* стили для футера */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -196,21 +214,37 @@ footer .nav-link {
 }
 
 @media screen and (max-width: 768px) {
-  .content {
-    margin: 32px 16px;
-  }
-  h1 {
-    font-size: 32px;
-    font-weight: 700;
-  }
-  .sneakers {
-    justify-content: center;
-  }
   .header-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
+  }
+  .content {
+    padding: 24px;
+    margin: 32px 16px;
+    border-radius: 12px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .sneaker-text {
+    flex-direction: column;
+  }
+  .text-history {
+    width: 100%;
+  }
+  .text-history p {
+    line-height: 24px;
+  }
+  .text-info {
+    width: 100%;
   }
   .footer-content {
     display: flex;
