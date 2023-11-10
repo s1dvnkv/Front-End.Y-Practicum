@@ -42,6 +42,13 @@ a {
 body {
   font-family: "Anonymous Pro", sans-serif;
 }
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 20px;
+}
 
 /* стили для главного контейнера */
 main {
@@ -125,7 +132,7 @@ h1 {
   border-radius: 12px;
   background: white;
 }
-.sneakers a:hover {
+.sneaker:hover {
   transition: 1s;
   transform: translateY(-10px);
   box-shadow: 5px 20px 20px 5px rgba(0, 0, 0, 0.1);
@@ -145,14 +152,7 @@ h1 {
   padding: 32px 24px;
 }
 
-h3 {
-  font-size: 26px;
-}
-
-p {
-  font-size: 20px;
-}
-
+/* стили для футера */
 footer {
   width: 100%;
   display: flex;
@@ -160,8 +160,6 @@ footer {
   align-items: center;
   background: #121723;
 }
-
-/* стили для футера */
 .footer-content {
   display: flex;
   justify-content: space-between;

@@ -29,11 +29,6 @@ li,
 hr {
   margin: 0;
 }
-hr {
-  height: 1px;
-  border: none;
-  background: black;
-}
 ul {
   list-style: none;
   padding: 0;
@@ -45,6 +40,30 @@ a {
 /* задание шрифта всей странице */
 body {
   font-family: "Anonymous Pro", sans-serif;
+}
+hr {
+  height: 1px;
+  border: none;
+  background: black;
+}
+h1,
+h2,
+p,
+h3 {
+  font-weight: 400;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 20px;
 }
 
 /* стили для главного контейнера */
@@ -102,18 +121,18 @@ nav {
 }
 
 /* стили для контента */
-.content h1,
-h2,
-h3,
-p {
-  color: #121723;
-}
 .content {
   margin: 32px 0;
   max-width: 1140px;
   padding: 48px;
   background: white;
   border-radius: 50px;
+}
+.content h1,
+h2,
+h3,
+p {
+  color: #121723;
 }
 
 .sneaker-image {
@@ -127,30 +146,6 @@ p {
   gap: 24px;
 }
 
-h1,
-h2,
-p,
-h3 {
-  font-weight: 400;
-}
-h1 {
-  font-size: 48px;
-}
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-p {
-  font-size: 20px;
-}
-.text-history p {
-  margin-bottom: 32px;
-  line-height: 28px;
-}
-
 .sneaker-text {
   display: flex;
   flex-direction: row;
@@ -161,6 +156,11 @@ p {
 .text-history {
   width: 50%;
 }
+.text-history p {
+  margin-bottom: 32px;
+  line-height: 28px;
+}
+
 .text-info {
   width: 50%;
   gap: 24px;
